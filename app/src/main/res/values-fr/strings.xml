@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Big Mother</string>
+
+    <string name="permission_granted">Permission accordée</string>
+    <string name="permission_not_granted">Permission non accordée</string>
+    <string name="send_sms">SMS envoyé</string>
+    <string name="location_not_found">Emplacement non trouvé</string>
+    <string name="phone_number">Numéro de téléphone (+33)</string>
+    <string name="keyword">Mot-clé</string>
+    <string name="enter_phone_number_manually">Entrer le numéro de téléphone manuellement</string>
+    <string name="display_contact">Afficher les contacts</string>
+</resources>

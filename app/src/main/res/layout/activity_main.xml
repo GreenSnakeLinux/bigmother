@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp">
+
+        <ImageButton
+            android:id="@+id/buttonContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTransparent"
+            android:src="@drawable/ic_baseline_contact_phone"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/display_contact"
+            tools:ignore="ContentDescription" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/buttonContact"
+            android:ems="10"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            tools:ignore="Autofill,LabelFor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutKeyWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp">
+        <TextView
+            android:id="@+id/textViewKeyWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/keyword" />
+
+        <EditText
+            android:id="@+id/textViewKeyword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="top|start"
+            android:hint="@string/keyword"
+            android:minHeight="48dp"
+            android:singleLine="false"
+            tools:ignore="Autofill,InefficientWeight,LabelFor,TextFields" />
+    </RelativeLayout>
+
+</LinearLayout>
