@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
             ActivityCompat.requestPermissions(this, PERMISSIONS, MY_PERMISSIONS_REQUEST_ALL);
         }
 
-        loadAppPref();
+        loadAppPref(this);
 
         ImageButton vContact = findViewById(R.id.buttonContact);
         EditText vPhone = findViewById(R.id.editTextPhone);
@@ -115,8 +115,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void loadAppPref() {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
+    public static void loadAppPref(Context context) {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         m_currentPhoneNumber = prefs.getString(PHONE_NUMBER_KEY, "+33");
         m_currentKeyWord = prefs.getString(KEYWORD_KEY, "GPS");
     }

@@ -15,6 +15,7 @@ public class SmsReceiver extends BroadcastReceiver {
 			SmsMessage sms = SmsMessage.createFromPdu((byte[]) pdus[0]);
 			String senderNumber = sms.getOriginatingAddress();
 			String message = sms.getMessageBody();
+			MainActivity.loadAppPref(context);
 			if( !isBigMotherPhone(senderNumber, message)) {
 				abortBroadcast();
 			} else
